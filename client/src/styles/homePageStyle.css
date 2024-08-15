@@ -1,10 +1,8 @@
-
-
 .image-container {
   position: relative;
   width: 100%;
-  height: 400px; /* adjust height as needed */
-  overflow: hidden; /* Ensure button doesn't overflow */
+  height: 400px; 
+  overflow: hidden; 
 }
 
 .image-container img {
@@ -29,4 +27,26 @@
   position: absolute;
   bottom: 10px;
   right: 10px;
+}
+
+/* Media query for small devices */
+@media (max-width: 768px) {
+  .image-container {
+    height: auto; 
+  }
+
+  .image-container h2,
+  .image-container p {
+    text-align: center; 
+  }
+
+  .image-container p {
+    top: 20px; 
+  }
+
+  .image-container button {
+    bottom: 20px; 
+    right: 50%; 
+    transform: translateX(50%);
+  }
 }
