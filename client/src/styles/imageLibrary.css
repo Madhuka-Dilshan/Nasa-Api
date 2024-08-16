@@ -1,39 +1,122 @@
-/* src/styles/imageLibrary.css */
+.header-content {
+  background-image: url('https://i.pinimg.com/originals/bd/f7/b5/bdf7b5af05d31bcdf6c1b29466b15a1d.jpg');
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+}
 
-.container {
-    margin-top: 20px;
+.header-title {
+  color: white;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 350px;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+.amazon-image {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 100px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    padding: 20px 10px;
   }
-  
-  .card-link {
-    text-decoration: none;
-    color: inherit; /* Inherit color from parent */
+
+  .header-title {
+    font-size: 1.5rem;
   }
-  
-  .card {
-    transition: transform 0.3s ease;
+
+  .search-input {
+    width: 80%;
+    font-size: 14px;
   }
-  
-  .card:hover {
-    transform: translateY(-5px);
+
+  .amazon-image {
+    width: 80px;
+    height: 60px;
   }
-  
-  .card-img-top {
-    width: 100%;
-    height: auto;
+}
+
+.content-container {
+  background-color: black;
+  padding: 20px;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-card {
+  flex: 1 1 calc(50% - 10px);
+  max-width: calc(50% - 10px);
+  margin: 5px;
+}
+
+.image-thumbnail {
+  width: 100%;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .image-card {
+    flex: 1 1 calc(100% - 10px);
+    max-width: calc(100% - 10px);
   }
-  
-  .card-body {
-    padding: 15px;
+}
+
+.footer-container {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content a {
+  color: white;
+  margin: 0 5px;
+}
+
+.nasa-logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  color: white;
+  font-size: 14px;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    font-size: 12px;
   }
-  
-  .card-title {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+
+  .nasa-logo {
+    width: 60px;
   }
-  
-  @media (min-width: 768px) {
-    .card-link {
-      display: block; /* Ensure Link covers entire card */
-    }
-  }
-  
+}
